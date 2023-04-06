@@ -1,4 +1,4 @@
-import chat from "../pages/chat/chat.js"
+import chat from "../modules/chat/chat.js"
 import error from "./error/error.js"
 import login from "../modules/login/login.js"
 import registration from "../modules/registration/registration.js"
@@ -64,7 +64,7 @@ const ChatComponent = {
 
   const router = () => {
     const path = parseLocation();
-    const { component = ErrorComponent } = findComponentByPath(path, routes) || {};
+    const { component = LoginComponent } = findComponentByPath(path, routes) || {};
     document.getElementById('root').innerHTML = component.render();
   };
 

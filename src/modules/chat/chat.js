@@ -1,5 +1,5 @@
 import template from "./chat.hbs";
-import messagePreview from "../../modules/chat/components/messagePreview/messagePreview";
+import messagePreview from "./components/messagePreview/messagePreview";
 import style from "./chat.scss";
 
 const chat = () => {
